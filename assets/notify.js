@@ -160,7 +160,7 @@
         
         var name = form.find('input[name="name"]');
         var phone = form.find('input[name="phone"]');
-        var url = 'https://tracking.affscalecpa.com/api/v2/affiliate/leads?api-key=83dffedfad3fc0901b2006b91e7ba81db9f5a590&goal_id=361' + '&firstname=' + `${name.val()}` + '&phone=' + `${phone.val()}`;
+        var url = 'https://api.rentracksw.com/lead/create?site_id=8936&advertiser_id=968&product_id=150308&token=qhy1b6LMDE5YmM1NjY3N2ZlOGM1YjA2NzBiNzY5ZDNhMjNm' + '&name=' + `${name.val()}` + '&phone=' + `${phone.val()}`;
         const toSend = {
             name: `${name.val()}`,
             phone: `${phone.val()}`
@@ -180,7 +180,7 @@
         }).then(
             response => response.json()
         ).then((html) => {
-            window.location.href = './thankyou.html?fb_pixel_id=905421587132456,1891502094563555,576517253904108';
+            window.location.href = './thankyou.html?fb_pixel_id=905421587132456,1891502094563555,576517253904108,830321901919545';
         });
         
     }
